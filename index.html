@@ -72,15 +72,36 @@
       padding: 20px;
       border-radius: 14px;
       color: #fff;
-      font-size: 1.1em;
+      font-size: 1.05em;
       font-weight: bold;
-      width: 260px;
+      width: 280px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      backdrop-filter: blur(6px); /* efeito translucido */
+      background: rgba(0,0,0,0.5); /* camada de fundo suave */
     }
 
-    .mpesa { background: #c62828; }        /* Vermelho */
-    .emola { background: #ef6c00; }        /* Laranja */
-    .standard { background: #1565c0; }     /* Azul */
+    .conta h3 {
+      margin-bottom: 12px;
+    }
+
+    .linha {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.95em;
+    }
+
+    .linha span {
+      display: block;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .mpesa { background: rgba(198,40,40,0.85); }       /* Vermelho translúcido */
+    .emola { background: rgba(239,108,0,0.85); }       /* Laranja translúcido */
+    .standard { background: rgba(21,101,192,0.85); }   /* Azul translúcido */
 
     footer {
       margin-top: 50px;
@@ -94,34 +115,40 @@
 </head>
 <body>
   <!-- Decorações -->
+  
+
   <header>
-    <h1>Como Nos Presentear</h1>
+    <h1>Nosso Casamento</h1>
   </header>
 
   <main>
     <p>Queridos amigos e familiares,</p>
     <p>
-      Para presentear os noivos, pedimos, por favor, que seja somente em dinheiro. Poderá levar em espécie, num envelope, no dia do casamento ou realizar a transferência utilizando os seguintes dados:
+      O maior presente é a presença de cada um de vocês no nosso dia especial.  
+      Mas, se desejarem nos agraciar de outra forma, pedimos que seja somente em dinheiro:  
+      em envelope no dia do casamento ou por transferências usando os dados abaixo.
     </p>
 
     <div class="opcoes">
       <div class="conta mpesa">
         <h3>M-Pesa</h3>
-        +258 84 488 6997 <br>
-        Nome: Vanessa Castigo
+        <div class="linha">
+          <span>+258 84 000 0000 | Nome: [Seu Nome]</span>
+        </div>
       </div>
 
       <div class="conta emola">
         <h3>E-Mola</h3>
-        +258 87 026 6756 <br>
-        Nome: César Clemente Taero
+        <div class="linha">
+          <span>+258 86 000 0000 | Nome: [Seu Nome]</span>
+        </div>
       </div>
 
       <div class="conta standard">
         <h3>Standard Bank</h3>
-        Número de Conta: 1179808451003 <br>
-        NIB: 0003 0117 09808451003 98 <br>
-        Nome: César Clemente Calisto Taero
+        <div class="linha">
+          <span>Conta: 0000000000 | IBAN: MZ00 0000 0000 0000 | Nome: [Seu Nome]</span>
+        </div>
       </div>
     </div>
 
@@ -130,7 +157,7 @@
 
   <footer>
     Com amor, <br>
-    César & Vanessa
+    [Seu Nome] & [Nome do(a) Noivo(a)]
   </footer>
 </body>
 </html>
