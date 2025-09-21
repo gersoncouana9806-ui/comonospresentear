@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente de Casamento</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f5;
+      color: #333;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Imagens decorativas nos cantos */
+    .decor-top-left, .decor-top-right,
+    .decor-bottom-left, .decor-bottom-right {
+      position: absolute;
+      width: 180px;
+      opacity: 0.8;
+      z-index: 1;
+    }
+
+    .decor-top-left { top: 0; left: 0; transform: rotate(-20deg); }
+    .decor-top-right { top: 0; right: 0; transform: rotate(20deg) scaleX(-1); }
+    .decor-bottom-left { bottom: 0; left: 0; transform: rotate(15deg); width: 160px; opacity: 0.7; }
+    .decor-bottom-right { bottom: 0; right: 0; transform: rotate(-15deg) scaleX(-1); width: 160px; opacity: 0.7; }
+
+    header {
+      background: #fff;
+      padding: 40px 20px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 2;
+    }
+
+    header img {
+      width: 220px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      margin-top: 20px;
+      color: #2f4f4f;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 15px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      position: relative;
+      z-index: 2;
+    }
+
+    .opcoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .conta {
+      padding: 20px;
+      border-radius: 14px;
+      color: #fff;
+      font-size: 1.1em;
+      font-weight: bold;
+      width: 260px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .mpesa { background: #c62828; }        /* Vermelho */
+    .emola { background: #ef6c00; }        /* Laranja */
+    .standard { background: #1565c0; }     /* Azul */
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorações -->
+  <header>
+    <h1>Como Nos Presentear</h1>
+  </header>
+
+  <main>
+    <p>Queridos amigos e familiares,</p>
+    <p>
+      Para presentear os noivos, pedimos, por favor, que seja somente em dinheiro. Poderá levar em espécie, num envelope, no dia do casamento ou realizar a transferência utilizando os seguintes dados:
+    </p>
+
+    <div class="opcoes">
+      <div class="conta mpesa">
+        <h3>M-Pesa</h3>
+        +258 84 488 6997 <br>
+        Nome: Vanessa Castigo
+      </div>
+
+      <div class="conta emola">
+        <h3>E-Mola</h3>
+        +258 87 026 6756 <br>
+        Nome: César Clemente Taero
+      </div>
+
+      <div class="conta standard">
+        <h3>Standard Bank</h3>
+        Número de Conta: 1179808451003 <br>
+        NIB: 0003 0117 09808451003 98 <br>
+        Nome: César Clemente Calisto Taero
+      </div>
+    </div>
+
+    <p>De coração, agradecemos por todo carinho e apoio!</p>
+  </main>
+
+  <footer>
+    Com amor, <br>
+    César & Vanessa
+  </footer>
+</body>
+</html>
